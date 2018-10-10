@@ -14,6 +14,7 @@ pipeline {
       }
     }
     stage('email') {
+      agent any
       steps {
         emailext(subject: 'Oppdatert foss4g-nor-web / spohner', attachLog: true, from: 'no-reply@tardis.no', to: 'steffen@pohnerhenriksen.com', body: 'Oppdatert!')
       }
