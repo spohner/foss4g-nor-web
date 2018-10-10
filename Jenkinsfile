@@ -2,23 +2,13 @@ pipeline {
   agent any
   stages {
     stage('NPM INSTALL') {
-      agent {
-        node {
-          label 'any'
-        }
-
-      }
+      agent any
       steps {
         sh 'npm install'
       }
     }
     stage('DEPLOY') {
-      agent {
-        node {
-          label 'any'
-        }
-
-      }
+      agent any
       steps {
         sh 'npm run deploy'
       }
