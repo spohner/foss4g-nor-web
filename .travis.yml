@@ -1,5 +1,10 @@
 language: node_js
 
+branches:
+  only:
+  - gh-pages
+  - /.*/
+
 os:
   - linux
   - osx
