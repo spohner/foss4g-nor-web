@@ -11,8 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("workbox-v3.6.1/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "workbox-v3.6.1"});
+importScripts("workbox-v3.6.2/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.6.2"});
 
 workbox.core.setCacheNameDetails({prefix: "gatsby-plugin-offline"});
 
@@ -26,33 +26,33 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-856d11ad8907beb9ff42.js"
+    "url": "webpack-runtime-8966209344c74916d226.js"
   },
   {
-    "url": "app.ad070e1bc766b692ebeb.css"
+    "url": "app.08ff7ed2cae494b42a4b.css"
   },
   {
-    "url": "app-c4a371a0563c3188ad3a.js"
+    "url": "app-c8180fa1ceb37d60d52c.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-cb9dfd7f4a6365c2750c.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-0c74cd028de0f247ec3e.js"
   },
   {
     "url": "index.html",
-    "revision": "83184df78e7590b1739fb7a5acf863bb"
+    "revision": "2aa187251fc49ed5a704518a6436faf9"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "b47d8a87b1a59ee84411da852f9d190d"
+    "revision": "2b14b87935abf92da418bc053f954744"
   },
   {
-    "url": "component---src-pages-index-js.43a7f1f5de0662497418.css"
+    "url": "component---src-pages-index-js.adcbef7d3bf193650e1a.css"
   },
   {
-    "url": "4-d1477e81b22b428c21fd.js"
+    "url": "4-68f3c24b065685f3f21a.js"
   },
   {
-    "url": "component---src-pages-index-js-abd57653880982de8ffb.js"
+    "url": "component---src-pages-index-js-c79779ffe79209c3b734.js"
   },
   {
     "url": "static/d/173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -66,7 +66,7 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/foss4g-nor-web/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
