@@ -1,20 +1,9 @@
 language: node_js
-
-branches:
-  only:
-  - gh-pages
-  - /.*/
-
-os:
-  - linux
-  - osx
-
 node_js:
-  - "node"
-  - "lts/*"
-  - "7"
-  - "8"
-
-script:
-  - npm install
-  - npm run deploy
+  - '10.0'
+deploy:
+- provider: script
+  skip_cleanup: true
+  script: npm run deploy
+  on:
+    branch: master
